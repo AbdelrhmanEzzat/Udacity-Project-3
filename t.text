@@ -48,3 +48,7 @@ docker push abdoezzat99/udagram-frontend:v7
 
 
 kubectl set image deployment frontend frontend=abdoezzat99/sudkul//udagram-frontend:v7
+
+
+
+kubectl expose deployment frontend --type=LoadBalancer --name=publicfrontend
