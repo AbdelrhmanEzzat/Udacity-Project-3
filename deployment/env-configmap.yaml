@@ -3,13 +3,10 @@ kind: ConfigMap
 metadata:
   name: env-config
 data:
-  POSTGRES_USERNAME: abdo
-  POSTGRES_PASSWORD: abdoabdo
-  POSTGRES_HOST: cdr.cnrmn0v8wvz3.us-east-1.rds.amazonaws.com
+  POSTGRES_HOST: cdr.c9scnb3kykoj.us-east-1.rds.amazonaws.com
   POSTGRES_DB: postgres
-  AWS_BUCKET: arn:aws:s3:::abdo-99-dev
+  AWS_BUCKET: arn:aws:s3:::abdo-1999-dev
   AWS_REGION: us-east-1
-  AWS_PROFILE: abdo2
+  AWS_PROFILE: default
   JWT_SECRET: testing
   URL: http://localhost:8100
-

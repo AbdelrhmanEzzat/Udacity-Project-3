@@ -38,11 +38,11 @@ eksctl create cluster --name microservice --region=us-east-1 --nodes-min=2 --nod
 
 
 
-psql -h cdr.cnrmn0v8wvz3.us-east-1.rds.amazonaws.com -U abdo postgres
+psql -h cdr.c9scnb3kykoj.us-east-1.rds.amazonaws.com -U abdo postgres
 
 
 
-aws eks update-kubeconfig --region us-east-1 --name microservice
+aws eks update-kubeconfig --region us-east-1 --name MyEKSCluster
 
 docker push abdoezzat99/udagram-frontend:v7
 
