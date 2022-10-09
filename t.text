@@ -44,7 +44,11 @@ psql -h cdr.c9scnb3kykoj.us-east-1.rds.amazonaws.com -U abdo postgres
 
 aws eks update-kubeconfig --region us-east-1 --name MyEKSCluster
 
-docker push abdoezzat99/udagram-frontend:v7
+
+docker build . -t abdoezzat99/sudkul/udagram-frontend:v7
+
+
+docker push abdoezzat99/sudkul/udagram-frontend:v7
 
 
 kubectl set image deployment frontend frontend=abdoezzat99/sudkul//udagram-frontend:v7
@@ -52,3 +56,11 @@ kubectl set image deployment frontend frontend=abdoezzat99/sudkul//udagram-front
 
 
 kubectl expose deployment frontend --type=LoadBalancer --name=publicfrontend
+
+
+
+
+docker tag udagram-frontend abdoezzat99/sudkul/udagram-frontend:v7
+
+
+kubectl set image deployment frontend frontend=abdoezzat99/sudkul/udagram-frontend:udagram-frontend
